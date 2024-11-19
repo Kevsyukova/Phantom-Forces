@@ -1,0 +1,137 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background: #0b0d15;
+    align-content: center;
+    font-family: Poppins;
+    padding: 30px;
+    font-weight: bolder;
+
+}
+
+nav {
+    height: 60px;
+    background-color: var(--color-1);
+    display: flex;
+    justify-content: flex;
+    align-items: center;
+    color: #bcbbff;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+nav a:hover {
+    color: rgb(255, 255, 255);
+}
+
+nav .home-link {
+    margin-right: auto;
+}
+
+nav svg {
+    fill: var(--text-color);
+}
+
+.links-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+@media(max-width: 450px) {
+    .links-container {
+        flex-direction: column;
+        align-items: flex-start;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 10;
+        width: 300px;
+        box-shadow: -5px 0 5px #ffffff40;
+        transition: 0.75s ease-out;
+    }
+
+    nav a {
+        box-sizing: border-box;
+        height: auto;
+        width: 100%;
+        padding: 20px 30px;
+        justify-content: flex-start;
+    }
+}
+
+.grid-item {
+    background-color: #0f111a;
+    border: 1px solid #859fff58;
+    border-radius: 40px;
+    margin: 5px;
+
+}
+.grid-item:hover {
+    background-color: #292f47;
+    border: 1px solid #859fff58;
+    border-radius: 40px;
+    margin: 5px; 
+}
+
+.data-label {
+    font-size: 14px;
+    color: #8fa4f1;
+    font-weight: bold;
+    padding: 2px;
+    margin: 0px;
+}
+
+
+.index-grid {
+    display: grid;
+    width: auto;
+    padding: 10px;
+}
+
+
+.flex-child {
+
+    width: max-content;
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+
+}
+
+.container-section {
+    margin-bottom: 20px
+}
+.result-container{
+    background-color: #bcbbff;
+    border-radius: 10px;
+    display: flex;
+}
+.index-item {
+    color: #000000;
+    font-weight: light;
+    flex: 1;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 300px;
+    border: 1px solid #383f59;
+    border-radius: 8px;
+    text-align: center;
+}
